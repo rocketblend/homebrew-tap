@@ -5,21 +5,21 @@
 class Rocketblend < Formula
   desc "Build and addon management for Blender projects."
   homepage "https://docs.rocketblend.io/"
-  version "0.8.1"
+  version "0.9.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rocketblend/rocketblend/releases/download/v0.8.1/rocketblend_Darwin_arm64.tar.gz"
-      sha256 "f8f420756d176dc15e966eb67aaf76f25c8bab9bc8640105ea8adca20bdb48d1"
+      url "https://github.com/rocketblend/rocketblend/releases/download/v0.9.0/rocketblend_Darwin_arm64.tar.gz"
+      sha256 "c3fb11da131c59d1c7a6b5408f65c559ce186b7f32333e391d7817233566145e"
 
       def install
         bin.install "rocketblend"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rocketblend/rocketblend/releases/download/v0.8.1/rocketblend_Darwin_x86_64.tar.gz"
-      sha256 "f1b8570ed9d66c4b2d2ecb7b1a4f0512834f8c7d97f1056667bd62029d1a8dee"
+      url "https://github.com/rocketblend/rocketblend/releases/download/v0.9.0/rocketblend_Darwin_x86_64.tar.gz"
+      sha256 "1ee19815f96c8d6628fa4df7bcdff2f6b14f8d165f39aac0a4fcc5b1e44be6f2"
 
       def install
         bin.install "rocketblend"
@@ -29,16 +29,16 @@ class Rocketblend < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rocketblend/rocketblend/releases/download/v0.8.1/rocketblend_Linux_arm64.tar.gz"
-      sha256 "ed47dd45d7267ea269b8242a767ba35f3d94324b92190aba7cd77f4efac75714"
+      url "https://github.com/rocketblend/rocketblend/releases/download/v0.9.0/rocketblend_Linux_arm64.tar.gz"
+      sha256 "1dd1fa67503c41b22dc4d3ccd5f0282d83b5b336ac62a80dfee3223b0e357c39"
 
       def install
         bin.install "rocketblend"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rocketblend/rocketblend/releases/download/v0.8.1/rocketblend_Linux_x86_64.tar.gz"
-      sha256 "9502c7e33028288375f0ff2b8a27b297ccdb17cbb22a7f30bda7f8fb3b294ae9"
+      url "https://github.com/rocketblend/rocketblend/releases/download/v0.9.0/rocketblend_Linux_x86_64.tar.gz"
+      sha256 "7e829778f7bdea72be99b91cae199d68b55fcdf165933fae7a740bc7a4dfe01f"
 
       def install
         bin.install "rocketblend"
