@@ -5,21 +5,21 @@
 class Collector < Formula
   desc "Package generator for RocketBlend."
   homepage "https://docs.rocketblend.io/v/collector/"
-  version "1.5.0"
+  version "1.6.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.5.0/collector_Darwin_arm64.tar.gz"
-      sha256 "1383c8168c37da39dec822ee0ac753fafcf14af23010c678fd14ad2543b347d6"
+      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.6.0/collector_Darwin_arm64.tar.gz"
+      sha256 "8231bb3fbb051fa870f022f920f8699fb60711b70e299ab2b4ab97618496ddff"
 
       def install
         bin.install "collector"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.5.0/collector_Darwin_x86_64.tar.gz"
-      sha256 "c0468d2a66096e1ea6604addfb60e88ebbdcafe6c69d760c48a90e9b25d01f72"
+      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.6.0/collector_Darwin_x86_64.tar.gz"
+      sha256 "41dd2f4c0210327cd54e8546680659cb5499e55966af1eab7ad8a526325d8351"
 
       def install
         bin.install "collector"
@@ -29,16 +29,16 @@ class Collector < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.5.0/collector_Linux_arm64.tar.gz"
-      sha256 "adc245cf0f1d9e9e5e8b1ed992cdc22ff3246065267133e78fd6483b780fa873"
+      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.6.0/collector_Linux_arm64.tar.gz"
+      sha256 "b550c428a0b735b05954dbbd255b2fe4ad0f8db0a1a6c10452e187bdfcaeb9dd"
 
       def install
         bin.install "collector"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.5.0/collector_Linux_x86_64.tar.gz"
-      sha256 "294b1f5b93c4c726f4a61569f18061b3a5352e753dc6fe84cb1dc425ae13bdbf"
+      url "https://github.com/rocketblend/rocketblend-collector/releases/download/v1.6.0/collector_Linux_x86_64.tar.gz"
+      sha256 "cca5cf434c84b0dc56fe6573772da83d0ce5dc4b5560f14c21b50b06e2aa0236"
 
       def install
         bin.install "collector"
